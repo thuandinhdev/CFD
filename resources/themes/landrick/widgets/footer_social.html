@@ -1,0 +1,9 @@
+<a href="#" class="logo-footer">
+    <img src="{{$file_path}}{{$footer_social['logo']}}" height="24" alt="">
+</a>
+<p class="mt-4">{{$footer_social['description']}}</p>
+<ul class="list-unstyled social-icon social mb-0 mt-4">
+    @foreach($footer_social['multipleData'] as $value) 
+        <li class="list-inline-item"><a href="{{$value['href']}}" class="rounded"><i data-feather="{{$value['class']}}" class="fea icon-sm fea-social"></i></a></li>
+    @endforeach
+</ul><!--end icon-->
